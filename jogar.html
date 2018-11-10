@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Jogo</title>
+	<style type="text/css">
+		.titlecontainer{
+			width:200px; 
+			height:200px;
+			margin: 100px auto auto auto;
+			border-radius: 90%;
+			border:none;
+			justify-content:center;
+		}
+		.yellow{
+			background-color: #b6b600;
+			transition: 0.5s;
+		}
+		.yellow1{
+			background-color: #ffff00;
+		}
+		.blue{
+			background-color: #0000b6;
+			transition: 0.5s;
+		}
+		.blue1{
+			background-color: #0000ff;
+		}					
+		.red {
+			background-color:#b60000;
+			transition: 0.5s;
+		}
+		.red1 {
+			background-color:#ff0000;
+		}
+		.green{
+			background-color: #00b600;
+			transition: 0.5s
+		}
+		.green1{
+			background-color: #00ff00;
+		}
+		button {
+			height: auto;
+			width: auto;
+			margin: 100px auto auto auto;
+		}
+	</style>
+</head>
+<body>
+	<button type="button"class="yellow titlecontainer" id="AM" ></button>
+	<button type="button" class="blue titlecontainer" id="AZ"></button>
+	<button type="button" class="red titlecontainer" id="VERM"></button>
+	<button type="button" class="green titlecontainer" id="VERD"></button>
+	<script type="text/javascript">				
+		var random=Math.floor(Math.random()*4);
+		console.log(random);
+
+			if(random==0){
+				document.getElementById("AM").style.color = "yellow";
+			}
+			else if(random==1){
+				document.getElementById("AZ").style.color = "blue";
+			}
+			else if(random==2){
+				document.getElementById("VERM").style.color = "red";
+			}
+			else{
+				document.getElementById("VERD").style.color = "green";
+			}
+	</script>
+</body>
+</html>
