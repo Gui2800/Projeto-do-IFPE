@@ -17,16 +17,28 @@
 		}
 		.y1 {
 			background-color: yellow;
-			transition: 1s;
+			transition: 1s;	
 		}
 		.blue{
 			background-color: #0000b6;
-		}				
+		}
+		.blu1 {
+			background-color: yellow;
+			transition: 1s;	
+		}			
 		.red {
 			background-color:#b60000;			
 		}
+		.red1 {
+			background-color: yellow;
+			transition: 1s;	
+		}
 		.green{
 			background-color: #00b600;	
+		}
+		.gre1 {
+			background-color: yellow;
+			transition: 1s;	
 		}
 	</style>
 </head>
@@ -39,10 +51,22 @@
 	<script type="text/javascript">				
 		var botao= document.getElementById('button');
 		var random=Math.floor(Math.random()*4)
-		console.log(random);
-		botao.addEventListener('click', function(){
-			document.getElementById('AM').className = ('y1 titlecontainer');
+		botao.addEventListener('click', function random(){
+			console.log(random=Math.floor(Math.random()*4));
+			//document.getElementById('AM').className = ('y1 titlecontainer');
 		});
+		if (random()==0){
+			document.getElementById('AM').className = ('y1 titlecontainer');
+			}
+		else if (random()==1){
+			document.getElementById('AZ').className = ('blu1 titlecontainer');
+			}
+		else if (random()==2){
+			document.getElementById('VERM').className = ('red1 titlecontainer');
+			}
+		else if (random()==3){
+			document.getElementById('VERD').className = ('gre1 titlecontainer');
+			}
 	</script>
 </body>
 </html>
