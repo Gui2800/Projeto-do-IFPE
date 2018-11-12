@@ -15,6 +15,9 @@
 		.yellow{
 			background-color: #b6b600;
 		}
+		.y1 {
+			background-color: yellow;
+		}
 		.blue{
 			background-color: #0000b6;
 		}				
@@ -37,7 +40,7 @@
 		var random=Math.floor(Math.random()*4)
 		console.log(random);
 		botao.addEventListener('click', function(){
-			document.getElementById('AM').style.color='red';
+			document.getElementById('AM').className = ('y1');
 		});
 	</script>
 </body>
