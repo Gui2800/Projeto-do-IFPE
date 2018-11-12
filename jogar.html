@@ -17,6 +17,7 @@
 		}
 		.y1 {
 			background-color: yellow;
+			transition: 1s;
 		}
 		.blue{
 			background-color: #0000b6;
@@ -40,7 +41,7 @@
 		var random=Math.floor(Math.random()*4)
 		console.log(random);
 		botao.addEventListener('click', function(){
-			document.getElementById('AM').className = ('y1');
+			document.getElementById('AM').className = ('y1 titlecontainer');
 		});
 	</script>
 </body>
