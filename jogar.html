@@ -17,28 +17,28 @@
 		}
 		.y1 {
 			background-color: #ffff00;
-			transition: 1s;	
+			transition: 0.5s;	
 		}
 		.blue{
 			background-color: #000096;
 		}
 		.blu1 {
 			background-color: #0000ff;
-			transition: 1s;	
+			transition: 0.5s;	
 		}			
 		.red {
 			background-color:#960000;			
 		}
 		.red1 {
 			background-color: #ff0000;
-			transition: 1s;	
+			transition: 0.5s;	
 		}
 		.green{
 			background-color: #009600;	
 		}
 		.gre1 {
 			background-color: #00ff00;
-			transition: 1s;	
+			transition: 0.5s;	
 		}
 		body {
 			background-color: black;
@@ -46,24 +46,25 @@
 		p {
 			color: #b6b600;
 		}
+
 	</style>
 </head>
 <body>
-	<button type="button" class="green titlecontainer" id="VERD" onclick="green()"></button>
-	<button type="button"class="yellow titlecontainer" id="AM" onclick="yellow()"></button>
-	<button type="button" class="blue titlecontainer" id="AZ" onclick="blue()"></button>
-	<button type="button" class="red titlecontainer" id="VERM" onclick="red()"></button>
+	<button type="button" class="green titlecontainer click" value="0" id="VERD" onclick="green()"></button>
+	<button type="button"class="yellow titlecontainer click" id="AM" onclick="yellow()"></button>
+	<button type="button" class="blue titlecontainer click" id="AZ" onclick="blue()"></button>
+	<button type="button" class="red titlecontainer click" id="VERM" onclick="red()"></button>
 	<p id="valoress"></p>
 	<p id="valores"></p>
 	<button onclick="myFunction()">CONTINUAR</button>
 	<script type="text/javascript">				
-			var texto = document.getElementById('valores');
-			var texto1 =  document.getElementById('valoress');
-			var valor1 = 0;
-			var valor2 = 0;
+		var texto = document.getElementById('valores');
+		var texto1 =  document.getElementById('valoress');
+		var valor1 = 0;
+		var valor2 = 0;
 			texto.innerHTML = 'RECORD:' + valor1;
 			texto1.innerHTML = 'TOTAL:'+ valor2;
-			var botao= document.getElementById('button');
+		var botao= document.getElementById('button');
 			console.log(Math.floor(Math.random()*4));
 		    function myFunction(){
 		    	valor1 = valor1 + 1;
@@ -103,11 +104,30 @@
 		function blue(){
 			document.getElementById('AZ').className = ('blue titlecontainer')
 		}
-		
-		function teste(){
-
-		}
-
-	</script>
+		var click = 
+		function click(){
+			if (random==0 && click){
+				document.getElementById('VERD').add.EventListener = '';
+				}	
+			else if (random==1 && click){
+				document.getElementById('AZ').add.EventListener = '';
+				}
+			else if (random==2 && click){
+				document.getElementById('VERM').add.EventListener = '';
+				}
+			else if (random==3 && click){
+				document.getElementById('AM').add.EventListener = '';			
+				};
+			}
+			var a = [0];
+			var a[a.lenght] = [1];
+			for (var i = a.length - 1; i >= 0; i--) {
+				a[i];
+			}
+			var b = document.getElementsByClassName("click");
+			alert(b[0]);
+			</script>
 </body>	
 </html>
+
+
