@@ -55,6 +55,7 @@
 	<button type="button" class="red titlecontainer" id="VERM" onclick="red()"></button>
 	<p id="valoress"></p>
 	<p id="valores"></p>
+	<button onclick="myFunction()">CONTINUAR</button>
 	<script type="text/javascript">				
 			var texto = document.getElementById('valores');
 			var texto1 =  document.getElementById('valoress');
@@ -67,14 +68,16 @@
 		    function myFunction(){
 		    	valor1 = valor1 + 1;
 		    }
-		    // var gui = ['gui', 1.70, 'masculino',  'blalbslbsl']
-		    // console.log(gui);
+		// var gui = ['gui', 1.70, 'masculino',  'blalbslbsl']
+		// console.log(gui);
 		var cores = [];
 		for (i = 0; i < 10; i++) {
 			cores[i] = Math.floor(Math.random()*4);
 		}
 		var random=Math.floor(Math.random()*4)
-		if (random==0){
+		function myFunction() {
+    		setTimeout(function(){ 
+    	if (random==0){
 			document.getElementById('VERD').className = ('gre1 titlecontainer');
 			}
 		else if (random==1){
@@ -85,7 +88,9 @@
 			}
 		else if (random==3){
 			document.getElementById('AM').className = ('y1 titlecontainer');
-			}
+				};
+    		}, 500);
+		}
 		function green(){
 			document.getElementById('VERD').className = ('green titlecontainer');
 		}
@@ -98,6 +103,11 @@
 		function blue(){
 			document.getElementById('AZ').className = ('blue titlecontainer')
 		}
+		
+		function teste(){
+
+		}
+
 	</script>
 </body>	
 </html>
