@@ -46,14 +46,13 @@
 		p {
 			color: #b6b600;
 		}
-
 	</style>
 </head>
 <body>
 	<button type="button" class="green titlecontainer click" value="0" id="VERD" onclick="green()"></button>
-	<button type="button"class="yellow titlecontainer click" id="AM" onclick="yellow()"></button>
-	<button type="button" class="blue titlecontainer click" id="AZ" onclick="blue()"></button>
-	<button type="button" class="red titlecontainer click" id="VERM" onclick="red()"></button>
+	<button type="button"class="yellow titlecontainer click" value="1" id="AM" onclick="yellow()"></button>
+	<button type="button" class="blue titlecontainer click" value="2" id="AZ" onclick="blue()"></button>
+	<button type="button" class="red titlecontainer click" value="3" id="VERM" onclick="red()"></button>
 	<p id="valoress"></p>
 	<p id="valores"></p>
 	<button onclick="myFunction()">CONTINUAR</button>
@@ -104,7 +103,7 @@
 		function blue(){
 			document.getElementById('AZ').className = ('blue titlecontainer')
 		}
-		var click = 
+		var click;
 		function click(){
 			if (random==0 && click){
 				document.getElementById('VERD').add.EventListener = '';
@@ -119,13 +118,15 @@
 				document.getElementById('AM').add.EventListener = '';			
 				};
 			}
-			var a = [0];
-			var a[a.lenght] = [1];
-			for (var i = a.length - 1; i >= 0; i--) {
-				a[i];
-			}
-			var b = document.getElementsByClassName("click");
-			alert(b[0]);
+			var b = document.getElementsByClassName("click")[0].innerHTML;
+			alert(b.value);
+			// function array(){
+			// 	var a = [0];
+			// 	var a[a.lenght] = [1];
+			// 	for (var i = a.length - 1; i >= 0; i--) {
+			// 		a[i];
+			// 	}
+			// }
 			</script>
 </body>	
 </html>
