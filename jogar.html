@@ -65,8 +65,8 @@
 			texto1.innerHTML = 'TOTAL:'+ valor2;
 		var botao= document.getElementById('button');
 			console.log(Math.floor(Math.random()*4));
-		    function myFunction(){
-		    	valor1 = valor1 + 1;
+		    function atribuir(){
+		    	valor1 += 1;
 		    }
 		// var gui = ['gui', 1.70, 'masculino',  'blalbslbsl']
 		// console.log(gui);
@@ -100,26 +100,29 @@
 		function red(){
 			document.getElementById('VERM').className = ('red titlecontainer')
 		}
+
 		function blue(){
 			document.getElementById('AZ').className = ('blue titlecontainer')
 		}
-		var click;
+		//var click;
 		function click(){
-			if (random==0 && click){
-				document.getElementById('VERD').add.EventListener = '';
-				}	
-			else if (random==1 && click){
+			if (random==0){
+				document.getElementById('VERD').add.EventListener("click", function(){
+					atribuir();
+				});	
+			} else if (random==1){
 				document.getElementById('AZ').add.EventListener = '';
-				}
-			else if (random==2 && click){
+			}
+			else if (random==2){
 				document.getElementById('VERM').add.EventListener = '';
 				}
-			else if (random==3 && click){
+			else if (random==3){
 				document.getElementById('AM').add.EventListener = '';			
 				};
 			}
-			var b = document.getElementsByClassName("click")[0].innerHTML;
-			alert(b.value);
+			click();
+			// var b = document.getElementsByClassName("click")[0].innerHTML;
+			// alert(b.value);
 			// function array(){
 			// 	var a = [0];
 			// 	var a[a.lenght] = [1];
