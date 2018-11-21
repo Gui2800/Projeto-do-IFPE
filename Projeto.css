@@ -8,7 +8,7 @@ a{
 	text-decoration: none;
 	color: white;	
 }
-/*Edicao*/
+/*----------Edicao-----------*/
 .rotate{
 	max-width: 500px;
 	padding: 0px 0px 100px 0px;
@@ -201,11 +201,11 @@ a{
 @keyframes quadrado {
 	0%
 	{
-		background-color: red; left: 800px; top: 160px;
+		background-color: red; left: 800px; top: 130px;
 	}
 	25%
 	{
-		background-color: blue; left: 818px; top: 160px;
+		background-color: blue; left: 818px; top: 130px;
 	}
 	50%
 	{
@@ -217,7 +217,7 @@ a{
 	}
 	100%
 	{
-		background-color: red; left: 500px; top: 160px;
+		background-color: red; left: 800px; top: 130px;
 	}
 }
 .div2 {
@@ -233,11 +233,11 @@ a{
 @keyframes quadrados {
 	0%
 	{
-		background-color: red; left: 818px; top: 470px;
+		background-color: red; left: 818px; top: 570px;
 	}
 	25%
 	{
-		background-color: blue; left: 500px; top: 470px;
+		background-color: blue; left: 500px; top: 570px;
 	}
 	50%
 	{
@@ -249,8 +249,8 @@ a{
 	}
 	100%
 	{
-		background-color: red; left: 818px; top: 470px;
+		background-color: red; left: 818px; top: 570px;
 	}
 }
-@media only screen and (max-width: )
+@media only screen and (max-width:)
 
