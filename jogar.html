@@ -46,11 +46,26 @@
 		p {
 			color: #b6b600;
 		}
+		a{
+			text-decoration: none;
+			color: white;
+			position: fixed;
+			left: 30px;
+			top: 35px;
+	}
 	</style>
+	
+
 </head>
 <body>
+	<script type="text/javascript">
+		function goback(){
+			window.history.back();
+		}
+	</script>
+	<a onclick="goback()" class="gui"><h2>VOLTAR</h2></a>
 	<button type="button" class="green titlecontainer click" value="0" id="VERD" onclick="green()"></button>
-	<button type="button" class="yellow titlecontainer click" value="1" id="AM" onclick="yellow()"></button>
+	<button type="button"class="yellow titlecontainer click" value="1" id="AM" onclick="yellow()"></button>
 	<button type="button" class="blue titlecontainer click" value="2" id="AZ" onclick="blue()"></button>
 	<button type="button" class="red titlecontainer click" value="3" id="VERM" onclick="red()"></button>
 	<p id="valoress"></p>
@@ -71,9 +86,9 @@
 		// var gui = ['gui', 1.70, 'masculino',  'blalbslbsl']
 		// console.log(gui);
 		var cores = [];
-		for (i = 0; i < 10; i++) {
-			cores[i] = Math.floor(Math.random()*4);
-		}
+		// for (i = 0; i < 10; i++) {
+		// 	cores[i] = Math.floor(Math.random()*4);
+		// }
 		var random=Math.floor(Math.random()*4)
 		function myFunction() {
     		setTimeout(function(){ 
@@ -89,8 +104,8 @@
 		else if (random==3){
 			document.getElementById('AM').className = ('y1 titlecontainer');
 				};
-    		}, 10);
-		}
+    		}, 10);	
+    	}
 		function green(){
 			document.getElementById('VERD').className = ('green titlecontainer');
 		}
@@ -100,11 +115,9 @@
 		function red(){
 			document.getElementById('VERM').className = ('red titlecontainer')
 		}
-
 		function blue(){
 			document.getElementById('AZ').className = ('blue titlecontainer')
-		}
-			
+		}	
 		// function click(){
 			// if (random==0){
 			// 	document.getElementById('VERD').add.EventListener("click", function(){
