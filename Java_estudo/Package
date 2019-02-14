@@ -1,0 +1,8 @@
+package uef;
+public class Uef {
+    public static void main(String[] args) {
+        Lutador l1 = new Lutador("Gilberto", "Brasil", 20, 1.80f, 82.5f, 13, 2, 1);
+        l1.status();
+    }
+    
+}
