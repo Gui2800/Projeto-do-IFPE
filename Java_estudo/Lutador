@@ -1,0 +1,120 @@
+package uef;
+public class Lutador {
+    private String nome;
+    private String nacionalidade;
+    private int idade;
+    private float altura;
+    private float peso;
+    private String modalidade;
+    private int vitorias;
+    private int derrotas;
+    private int empates;
+    
+    //NOME
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String no) {
+        this.nome = no;
+    }
+    
+    //PESO
+    public float getPeso() {
+        return peso;
+    }
+    public void setPeso(float pe ) {
+        this.peso = pe;
+    }
+    
+    //MODALIDADE
+    public String getModalidade() {
+        return modalidade;
+    }
+    private void setModalidade(String modalidade) {
+        this.modalidade = modalidade;
+        if (this.getPeso() < 80) {
+            this.setModalidade("Invalido");
+        }else if (this.getPeso() <= 80) {
+            this.setModalidade("Leve");
+        }else if (this.getPeso() > 80 && this.getPeso() <= 100) {
+            this.setModalidade("Medio");
+        }else if (this.getPeso() > 100) {
+            this.setModalidade("Pesada");
+        }else {
+            this.setModalidade("Invalido");
+        } 
+    
+    }
+
+    public String getNacionalidade() {
+        return nacionalidade;
+    }
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public float getAltura() {
+        return altura;
+    }
+    public void setAltura(float altura) {
+        this.altura = altura;
+    }
+
+    public int getVitorias() {
+        return vitorias;
+    }
+    public void setVitorias(int vitorias) {
+        this.vitorias = vitorias;
+    }
+
+    public int getDerrotas() {
+        return derrotas;
+    }
+    public void setDerrotas(int derrotas) {
+        this.derrotas = derrotas;
+    }
+
+    public int getEmpates() {
+        return empates;
+    }
+    public void setEmpates(int empates) {
+        this.empates = empates;
+    }
+    
+    
+    
+    public void apresentar(){
+        
+    }
+    public void status(){
+        
+    }
+    public void ganharLuta(){
+        this.setVitorias(this.getVitorias() + 1);
+    }
+    public void perderLuta(){
+        this.setDerrotas(this.getDerrotas() + 1);
+    }
+    public void empatarLuta(){
+        this.setEmpates(this.getEmpates() + 1);
+    }
+    
+    //Metodos esspeciais
+    public Lutador(String no, String na, int id, float al, float pe, int vi, int de, int em){
+        this.nome = no;
+        this.nacionalidade = na;
+        this.idade = id;
+        this.altura = al;
+        this.setPeso(pe);
+        this.vitorias = vi;
+        this.derrotas = de;
+        this.empates = em;
+    }
+}
