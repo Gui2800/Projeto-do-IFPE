@@ -85,17 +85,7 @@ public class CriarPersonagem {
         return vida;
     }
     private void setVida(double vida ){
-        if (this.getClasse() == "Guerreiro") {
-            this.vida = 2500;
-        }else if (this.getClasse() == "Mago") {
-            this.vida = 1650;
-        }else if (this.getClasse() == "Druida") {
-            this.vida = 2350;
-        }else if (this.getClasse() == "Ladino") {
-            this.vida = 1500;
-        }else if (this.getClasse() == "Caçador") {
-            this.vida = 1500;
-        }
+        this.vida = vida;
     }
     
     //Mana
@@ -103,17 +93,7 @@ public class CriarPersonagem {
         return mana;
     }
     private void setMana(double mana){
-        if (this.getClasse() == "Guerreiro") {
-            this.mana = 550;
-        }else if (this.getClasse() == "Mago") {
-            this.mana = 1200;
-        }else if (this.getClasse() == "Druida") {
-            this.mana = 1050;
-        }else if (this.getClasse() == "Ladino") {
-            this.mana = 470;
-        }else if (this.getClasse() == "Caçador") {
-            this.mana = 500;
-        }
+        this.mana = mana;
     }
     
     //Ataque Fisico
@@ -121,17 +101,7 @@ public class CriarPersonagem {
         return ataqueFisico;
     }
     private void setAtaqueFisico(double ataqueFisico){
-        if (this.getClasse() == "Guerreiro") {
-            this.ataqueFisico = 55;
-        }else if (this.getClasse() == "Mago") {
-            this.ataqueFisico = 5;
-        }else if (this.getClasse() == "Druida") {
-            this.ataqueFisico = 25;
-        }else if (this.getClasse() == "Ladino") {
-            this.ataqueFisico = 80;
-        }else if (this.getClasse() == "Caçador") {
-            this.ataqueFisico = 85;
-        }
+        this.ataqueFisico = ataqueFisico;
     }
     
     //Ataque Magico
@@ -139,17 +109,7 @@ public class CriarPersonagem {
         return ataqueMagico;
     }
     private void setAtaqueMagico(double ataqueMagico ){
-        if (this.getClasse() == "Guerreiro") {
-            this.ataqueMagico = 0;
-        }else if (this.getClasse() == "Mago") {
-            this.ataqueMagico = 86;
-        }else if (this.getClasse() == "Druida") {
-            this.ataqueMagico = 25;
-        }else if (this.getClasse() == "Ladino") {
-            this.ataqueMagico = 8;
-        }else if (this.getClasse() == "Caçador") {
-            this.ataqueMagico = 5;
-        }
+        this.ataqueMagico = ataqueMagico;
     }
     
     public void descriçao(){
@@ -179,6 +139,7 @@ public class CriarPersonagem {
         System.out.println("Mana: " + this.mana);
         System.out.println("Ataque Fisico: " + this.ataqueFisico);
         System.out.println("Ataque Magico: " + this.ataqueMagico);
+        System.out.println("-------------------");
     }
     
     //Construtor
@@ -188,5 +149,57 @@ public class CriarPersonagem {
         this.sexo = sexo;
         this.idade = idade;
         this.classe = classe;
+        
+        //VIDA
+        if (this.getClasse() == "Guerreiro") {
+            this.vida = 2500;
+        }else if (this.getClasse() == "Mago") {
+            this.vida = 1650;
+        }else if (this.getClasse() == "Druida") {
+            this.vida = 2350;
+        }else if (this.getClasse() == "Ladino") {
+            this.vida = 1500;
+        }else if (this.getClasse() == "Caçador") {
+            this.vida = 1500;
+        }
+        
+        //MANA
+        if (this.getClasse() == "Guerreiro") {
+            this.mana = 550;
+        }else if (this.getClasse() == "Mago") {
+            this.mana = 1200;
+        }else if (this.getClasse() == "Druida") {
+            this.mana = 1050;
+        }else if (this.getClasse() == "Ladino") {
+            this.mana = 470;
+        }else if (this.getClasse() == "Caçador") {
+            this.mana = 500;
+        }
+        
+        //ATAQUE FISICO
+        if (this.getClasse() == "Guerreiro") {
+            this.ataqueFisico = 55;
+        }else if (this.getClasse() == "Mago") {
+            this.ataqueFisico = 5;
+        }else if (this.getClasse() == "Druida") {
+            this.ataqueFisico = 25;
+        }else if (this.getClasse() == "Ladino") {
+            this.ataqueFisico = 80;
+        }else if (this.getClasse() == "Caçador") {
+            this.ataqueFisico = 85;
+        }
+        
+        //ATAQUE MAGICO
+        if (this.getClasse() == "Guerreiro") {
+            this.ataqueMagico = 0;
+        }else if (this.getClasse() == "Mago") {
+            this.ataqueMagico = 86;
+        }else if (this.getClasse() == "Druida") {
+            this.ataqueMagico = 25;
+        }else if (this.getClasse() == "Ladino") {
+            this.ataqueMagico = 8;
+        }else if (this.getClasse() == "Caçador") {
+            this.ataqueMagico = 5;
+        }
     }
 }
