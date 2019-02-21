@@ -81,7 +81,7 @@ public class CriarPersonagem {
     }
     
     //Vida 
-    private double getVida(){
+    public double getVida(){
         return vida;
     }
     private void setVida(double vida ){
@@ -89,7 +89,7 @@ public class CriarPersonagem {
     }
     
     //Mana
-    private double getMana(){
+    public double getMana(){
         return mana;
     }
     private void setMana(double mana){
@@ -97,7 +97,7 @@ public class CriarPersonagem {
     }
     
     //Ataque Fisico
-    private double getAtaqueFisico(){
+    public double getAtaqueFisico(){
         return ataqueFisico;
     }
     private void setAtaqueFisico(double ataqueFisico){
@@ -105,11 +105,20 @@ public class CriarPersonagem {
     }
     
     //Ataque Magico
-    private double getAtaqueMagico(){
+    public double getAtaqueMagico(){
         return ataqueMagico;
     }
     private void setAtaqueMagico(double ataqueMagico ){
         this.ataqueMagico = ataqueMagico;
+    }
+    
+    public void atacarF(){
+        System.out.println("Atacar o inimigo " + ", dando um dano de " + this.getAtaqueFisico());
+        //Diminuir a vida do inimigo
+    }
+    public void atacarM(){
+        System.out.println("Atacar o inimigo " + ", dando um dano de " + this.getAtaqueMagico());
+        //Diminuir a vida do inimigo
     }
     
     public void descriçao(){
