@@ -1,6 +1,5 @@
 body{
-	margin: 0px;
-	padding: 0px;
+	padding: 0px, 0px, 0px, 0px;
 }
 
 /*Top*/
@@ -47,9 +46,20 @@ body{
 }
 /*Button*/
 .buuton{
-	
+	background-color: #53A500; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10%;
 }
-
+*{
+	padding: 0;
+	margin: 0;
+}
 /*Bottom*/
 .baixo{
 	width: 100%;
@@ -58,7 +68,7 @@ body{
 	position: relative;	
 	background-color: #18481c;
 	background-image: linear-gradient(-45deg, #266B29, #18481c);
-	margin-bottom: 0px; 	
+	margin-bottom: -50%; 	
 }
 /*Links*/
 .a1{
